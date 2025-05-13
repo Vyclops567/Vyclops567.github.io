@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra - Celestial Candles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    
+
+    <form id="purchase-form" action="velas.php" method="post">
+        <div class="form-group">
+            <label for="vela">Escoge el tipo de vela:</label>
+            <div class="vela-options">
+                <label>
+                    <input type="radio" name="vela" value="1000" required onchange="calculateTotal()">
+                    Vainilla - 1000 pesos
+                </label>
+                <label>
+                    <input type="radio" name="vela" value="1000" onchange="calculateTotal()">
+                    Fresa  - 1000 pesos
+                </label>
+                <label>
+                    <input type="radio" name="vela" value="1000" onchange="calculateTotal()">
+                    Rosas - 1000 pesos
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1" onchange="calculateTotal()" required>
+        </div>
+
+        <div class="form-group">
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Numero de Telefono:</label>
+            <input type="number" id="telefono" name="telefono" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+
+        <div class="form-group">
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required>
+        </div>
+   <button class="back-button" onclick="window.location.href='menu.html'">Volver al Menú</button>
+
+        <button type="submit" class="buy-button">Comprar</button>
+    </form>
+</div>
+
+<script>
+    function calculateTotal() {
+        const velaElements = document.getElementsByName('vela');
+        let precio = 0;
+        let cantidad = document.getElementById('cantidad').value;
+
+        for (let i = 0; i < velaElements.length; i++) {
+            if (velaElements[i].checked) {
+                precio = parseFloat(velaElements[i].value);
+                break;
+            }
+        }
+
+        const total = precio * cantidad;
+        document.getElementById('total').value = total ? total.toFixed(2) + ' pesos' : '0.00 pesos';
+    }
+
+    // Calcular total inicial
+    document.getElementById('cantidad').addEventListener('input', calculateTotal);
+</script>
+
+</body>
+</html>

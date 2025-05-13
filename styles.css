@@ -1,0 +1,381 @@
+/* Reset y estilos básicos */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f7d7e7, #e2a0b3); /* Fondo degradado */
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.form-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9c8d8;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Imagen de la parte superior */
+.form-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.form-image:hover {
+    transform: scale(1.02);
+}
+
+/* Cajas de información */
+.info-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background: linear-gradient(to right, #ffffff, #fbe3e3);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e2a0b3;
+}
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Encabezados y texto */
+h3 {
+    color: #a86da5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e2a0b3;
+    padding-bottom: 5px;
+}
+p {
+    font-size: 18px;
+    color: #4d4d4d;
+    line-height: 1.6;
+}
+
+/* Botón de inicio */
+.start-button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: #a86da5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.start-button:hover {
+    background-color: #8e5b85;
+    transform: scale(1.05);
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7d7e7; /* Fondo rosado */
+    font-family: Arial, sans-serif;
+}
+
+.container, .menu-container, .transporte-container, .mision-vision-container, .valores-container {
+    max-width: 1200px; /* Ancho máximo común */
+    margin: 50px auto; /* Centrar el contenedor */
+    padding: 20px;
+    background-color: #f9c8d8; /* Fondo del contenedor */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+.menu-box {
+    padding: 30px;
+    border: 3px solid #e2a0b3; /* Borde elegante */
+    display: inline-block; /* Mantener tamaño ajustado al contenido */
+    transition: transform 0.3s; /* Animación de transformación */
+}
+
+.menu-box:hover {
+    transform: scale(1.05); /* Escalar el cuadro al pasar el ratón */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white; /* Letras blancas */
+    background-color: #e2a0b3; /* Fondo del botón más rosado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid #d09dc8; /* Borde del botón */
+    transition: background-color 0.3s, transform 0.3s; /* Animaciones de transición */
+}
+
+.menu a:hover {
+    background-color: #d09dc8; /* Fondo más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+h1 {
+    color: #4d4d4d; /* Color del título principal */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #a86da5; /* Color de los subtítulos */
+    font-size: 24px;
+    margin: 0; /* Sin margen */
+}
+
+.section {
+    background-color: white; /* Fondo blanco para las secciones */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre secciones */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s; /* Transición para efecto hover */
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Elevación al pasar el ratón */
+}
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    color: #4d4d4d; /* Color del texto */
+}
+
+.start-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #a86da5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #8e5b85;
+}
+
+.valor, .caracteristica {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+.valor:hover, .caracteristica:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.caracteristica h3 {
+    color: #a86da5;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.caracteristica p {
+    font-size: 16px;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espaciado entre cuadros */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7d7e7; /* Fondo rosado */
+}
+
+.politicas-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9c8d8;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #4d4d4d;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.politica {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.politica h2 {
+    color: #a86da5;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.politica p {
+    font-size: 16px;
+    color: #4d4d4d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #a86da5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #8e5b85;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7d7e7; /* Fondo rosado */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco para mayor contraste */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: #4d4d4d;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive; /* Fuente más elegante para el título */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    color: #4d4d4d;
+    margin-bottom: 5px;
+    display: block; /* Para asegurar que los labels estén en su propia línea */
+}
+
+.vela-options {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column; /* Colocar las opciones en columna */
+    gap: 10px; /* Espacio entre las opciones */
+}
+
+input[type="text"], 
+input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #e2a0b3; /* Borde rosado */
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus {
+    border-color: #a86da5; /* Cambiar el borde al enfocar */
+    outline: none; /* Quitar el borde de enfoque por defecto */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Espacio entre el radio y el texto */
+}
+
+.buy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #a86da5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #8e5b85;
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+input[type="text"], 
+input[type="number"], 
+.buy-button {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.total-container {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Estilos del contenedor principal */
+ .transporte-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100%;
+    overflow: auto;
+}
